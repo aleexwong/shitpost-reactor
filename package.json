@@ -35,7 +35,11 @@
     "humor",
     "meme"
   ],
-  "author": "Alex (alexinzekitchen)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleexwong/shit-post-npm"
+  },
+  "author": "aleexwong",
   "license": "MIT",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.104.1"
