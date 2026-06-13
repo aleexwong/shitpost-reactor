@@ -1,0 +1,48 @@
+{
+  "name": "shitpost-reactor",
+  "version": "0.1.2",
+  "description": "Agentic shitpost generator CLI powered by Claude. Feed it a topic, set the chaos dial, get cursed posts.",
+  "type": "module",
+  "bin": {
+    "shitpost-reactor": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --import tsx --test test/*.test.ts",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "shitpost",
+    "cli",
+    "claude",
+    "anthropic",
+    "ai",
+    "agent",
+    "humor",
+    "meme"
+  ],
+  "author": "Alex (alexinzekitchen)",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.104.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0"
+  }
+}
