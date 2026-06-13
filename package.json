@@ -1,6 +1,6 @@
 {
   "name": "shitpost-reactor",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Agentic shitpost generator CLI powered by Claude. Feed it a topic, set the chaos dial, get cursed posts.",
   "type": "module",
   "bin": {
